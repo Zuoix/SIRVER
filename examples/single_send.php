@@ -7,11 +7,11 @@
 
 require_once('autoload.php');
 
-$apiClient = new SMSGatewayApi(AUTH_KEY, SERVER);
+$apiClient = new SirverSMSGateway(AUTH_KEY, SERVER);
 
 try {
 
-    $response = $apiClient->sendSMS('14156661234', 'This SMS from API at localhost', 'ARS-L22', 2);
+    $response = $apiClient->sendSMS('237676089081', 'This SMS from API at localhost', 'ARS-L22', 2);
     print_r($response);
 
 } catch (Exception $e) {
@@ -47,19 +47,20 @@ Array
                         )
                     [payload] => Array
                         (
-                            [username] => admin.sms@ntechpark.com
+                            [username] => your_username@domain.com
                             [firebase_access_key] => 
                             [device_model] => ARS-L22
                             [device_token] => 
                             [sim_id] => 2
                             [created_by] => 1
                             [bulk] => yes
-                            [message] => This SMS from API at localhost
-                            [created_at] => 2019-11-29 21:03:00
-                            [mobile_no] => 14156661234
+                            [message] => This SMS is from SirVer SMS Gateway API
+                            [created_at] => 2020-02-28 21:03:00
+                            [mobile_no] => 237676089081
                             [msgID] => 23
                         )
                 )
         )
 )
 */
+?>
