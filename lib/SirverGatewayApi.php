@@ -20,7 +20,7 @@ class SirverGatewayApi {
 	}
 
 	/**
-	 * @param string     $mobile_no  The mobile number where you want to send message.
+	 * @param string     $mobile_no  Receiver's Mobile Number (mostly in local format).
 	 * @param string     $message The message you want to send.
 	 * @param string     $device_model The model of the device you want to use to send this message.
 	 * @param int 		 $sim_id  The id  of the sim you want to use to send this message.
@@ -36,7 +36,7 @@ class SirverGatewayApi {
 	}
 
 	/**
-	 * @param array         $mobile_numbers  The mobile number where you want to send message.
+	 * @param array         $mobile_numbers  Receivers mobile numbers
 	 * @param string        $message The message you want to send.
 	 * @param string        $device_model The model of the device you want to use to send this message.
 	 * @param int    		$sim_id  The id  of the sim you want to use to send this message.
